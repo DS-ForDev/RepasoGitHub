@@ -14,7 +14,7 @@
             <label for="documentType">Tipo de Documento:</label>
             <select name="documentType" required>
                 <option value="CC">Cédula de Ciudadanía</option>
-                <option value="PA">Pasaporte</option>
+                <option value="TI">Tarjeta de Identidad</option>
                 <option value="CE">Cédula de Extranjería</option>
             </select>
 
