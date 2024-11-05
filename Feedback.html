@@ -9,22 +9,29 @@
 </head>
 <body>
     <style>/* Contenedor principal */
+     :root{
+    --primary-color: #2f4f7f;
+    --secondary-color: #f7f7f7;
+    --terciary-color: #45a0e6;
+ }
         .lost-found-container {
-            width: 71%;
+            width: 60%;
             margin: 0 auto;
             font-family: 'Arial', sans-serif;
             
         }
         
-        
-        /* Cabecera */
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #2B547E;
-            padding: 20px;
-        }
+        /* Limitar el tamaño de las imágenes grandes después de la descripción */
+        .found-item-image-large {
+        max-width: 500px; /* Ajusta el ancho máximo según sea necesario */
+        width: 100%;
+        height: -50px;
+        border-radius: 20px;
+        margin: 20px 0;
+}
+
+
+
         
         /* Contenedor del logo y título */
         .logo-container {
@@ -37,11 +44,25 @@
             height: 60px;
             margin-right: 15px;
         }
-        
-        .header h1 {
-            color: white;
-            font-size: 32px;
-            font-weight: bold;
+        .header {
+            width: 100%;
+            background-color: var(--primary-color);
+            padding: 10px 0;
+            color: var(--secondary-color);
+            text-align: center;
+        }
+
+        .header img {
+            width: 40px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .header a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
         }
         
         /* Enlaces de navegación y íconos en la cabecera */
@@ -53,8 +74,8 @@
         }
         
         nav a img {
-            width: 24px;
-            height: 24px;
+            width: 15px;
+            height: 15px;
             margin-left: 15px;
         }
         
@@ -263,18 +284,33 @@
         
         .review-button:hover {
             background-color: #23527c; /* Azul más oscuro al pasar el mouse */
-        }</style>
+        }
+        .footer {
+            margin-top: 20px;
+            color: var(--primary-color);
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
 
-</html><div class="lost-found-container"><!-- Cabecera -->
+        .footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        </style>
+
+</html><!-- Cabecera -->
+    
     <div class="header">
-    <div class="logo-container"><img class="logo" src="https://objetos-perdidos.co/wp-content/uploads/2024/09/cropped-Diseno-sin-titulo23-1.png"
-    <h1>Objetos Perdidos</h1>
+        <img src="https://objetos-perdidos.co/wp-content/uploads/2024/09/cropped-Diseno-sin-titulo23-1.png" alt="Logo"> <!-- Reemplaza "logo.png" con la URL de tu logo -->
+        <a href="#">Inicio</a>
+        <a href="#">Objetos Perdidos</a>
+        <a href="#">Contactos</a>
+        <a href="#">Ayuda</a>
+        <a href="#"><img src="url-icono-usuario" alt="Usuario" /></a></nav></div>
     </div>
-    <nav><a href="#">Publicaciones</a>
-    <a href="#">Dashboard</a>
-    <a href="#">Ayuda</a>
-    <a href="#"><img src="url-icono-configuracion" alt="Configuración" /></a>
-    <a href="#"><img src="url-icono-usuario" alt="Usuario" /></a></nav></div>
+    <div class="lost-found-container">
     <!-- Sección de búsqueda -->
     <div class="search-section"><input type="text" placeholder="Buscar..." />
     <button class="filter-button">Filtros</button></div>
@@ -298,7 +334,7 @@
          <li>Un monedero negro con textura de cocodrilo.</li>
          <li>Dos llaves de auto con llaveros distintos.</li>
          <li>Un llavero en forma de anillo con tres llaves más.</li>
-    </ul><img class="found-item-image" src="https://objetos-perdidos.co/wp-content/uploads/2024/10/elementosperdidos.jpeg" alt="Objetos encontrados" />
+    </ul><img class="found-item-image found-item-image-large " src="https://objetos-perdidos.co/wp-content/uploads/2024/10/elementosperdidos.jpeg" alt="Objetos encontrados" />
     
     <button class="claim-button">Este es mi objeto</button>
     
@@ -317,19 +353,20 @@
          <li>Una guitarra eléctrica con una funda de guitarra.</li>
          <li>Una fotografía antigua enmarcada en plata.</li>
          <li>Una tarjeta de SFTP sin saldo</ul>
-    <img class="found-item-image" src="https://objetos-perdidos.co/wp-content/uploads/2024/10/imagen_2024-10-06_160437076.png" alt="Objetos encontrados" />
+    <img class="found-item-image found-item-image-large" src="https://objetos-perdidos.co/wp-content/uploads/2024/10/imagen_2024-10-06_160437076.png" alt="Objetos encontrados" />
     <button class="claim-button">escribir reseña ★</button>
     </div>
     </div>
     </div>
+</div>
     <!-- Pie de página -->
     
     <footer>
-    <div class="social-icons"><a href="#"><img src="facebook-icon-url" alt="Facebook" /></a>
-    <a href="#"><img src="twitter-icon-url" alt="Twitter" /></a>
-    <a href="#"><img src="instagram-icon-url" alt="Instagram" /></a></div>
-    © 2024 Objetos Perdidos. Todos los derechos reservados.
-    
+    <div class="footer">
+        <div class="footer">
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
     </footer>
-
+</div>
 </body>
